@@ -5,30 +5,49 @@ body
     background-image: url("green2.jpg");
     no-repeat: fixed center;
     background-size: cover;
-    color: #ffffff;
+    color: #ecff00;
 }
 
 
 .carlos
 {
-    color: #ffffff;
+    color: #ff000e;
+
+
 
 
 }
 .carlos2
 {
-    color: #ffffff;
+    color: #3af8ff;
+
+
 
 }
 .players{
     top: 50%;
     bottom: 50%;
     width: 20%;
-    margin: auto;
+    margin-top: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Orbitron', sans-serif;
+
 }
 
 .buttons
 {
     width: 15%;
-    margin: auto;
+    margin-top: auto;
+    margin-left: 40em;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+#notification
+{
+    font-size: larger;
+    color: #ecff00;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
