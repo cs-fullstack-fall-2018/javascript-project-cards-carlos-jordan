@@ -70,6 +70,8 @@ function runGame() {
 
             if (player1Deck[i].cardNumber > player2Deck[x].cardNumber) {
                 console.log('Player 1 wins this round');
+                console.log(player1Deck[i].cardNumber);
+                console.log(player2Deck[x].cardNumber);
                 player1Score.innerHTML ++;
                 i++;
                 winner.innerHTML  = "Player 1 Won This Round";
@@ -77,13 +79,18 @@ function runGame() {
 
             } else if (player1Deck[i].cardNumber < player2Deck[x].cardNumber) {
                 console.log('Player 2 wins this round');
+                console.log(player1Deck[i].cardNumber);
+                console.log(player2Deck[x].cardNumber);
                 player2Score.innerHTML ++;
                 i++;
                 winner.innerHTML  = "Player 2 Won This Round";
 
-            } else if (player1Deck[i].cardNumber === player2Deck[x].cardNumber) {
+            } else if (player1Deck[i].cardNumber == player2Deck[x].cardNumber) {
                 console.log('Issa tie');
+                console.log(player1Deck[i].cardNumber);
+                console.log(player2Deck[x].cardNumber);
                 i++;
+                x++;
                 winner.innerHTML  = "It's a Tie!";
 
 
@@ -98,7 +105,7 @@ function reshuffleReset() {
 
     var cards = new Array();
     var typeArray = ["s", "d", "c", "h"];
-    var cardNumberArray = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"];
+    var cardNumberArray = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
     var newP1score = 0;
     var newP2score = 0;
     x = newP2score;
