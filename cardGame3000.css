@@ -1,0 +1,11 @@
+h1
+{
+    color: #0954cc;
+}
+
+body
+{
+    background-image: url("green.jpg");
+    no-repeat fixed center;
+    background-size: cover;
+}
