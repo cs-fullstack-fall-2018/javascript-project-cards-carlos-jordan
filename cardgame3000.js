@@ -56,36 +56,33 @@ var player1Deck = [];
 var player2Deck = [];
 var player1Score = 0;
 var player2Score = 0;
+var startButton = document.getElementById('start');
+var i = 0;
 
 
 player1Deck = cards.slice();
 player2Deck = player1Deck.splice(1, 26);
 
-var userInput = prompt("Do you want to play a game?");
+function runGame() {
 
-while(userInput !== "yes") {
-
-    for (var i = 0; i < player2Deck.length; i++) {
-        if (player1Deck[i].cardNumber > player2Deck[i].cardNumber) {
-            console.log('Player 1 wins this round');
-            console.log(player1Score++);
-            userInput = prompt("Do you want to play a game?").toLowerCase()
+            if (player1Deck[i].cardNumber > player2Deck[i].cardNumber) {
+                console.log('Player 1 wins this round');
+                console.log(player1Score++);
+                i++;
 
 
-        } else if (player1Deck[i].cardNumber < player2Deck[i].cardNumber) {
-            console.log('Player 2 wins this round');
-            console.log(player2Score++);
-            userInput = prompt("Do you want to play a game?").toLowerCase()
+            } else if (player1Deck[i].cardNumber < player2Deck[i].cardNumber) {
+                console.log('Player 2 wins this round');
+                console.log(player2Score++);
+                i++;
 
-        } else if (player1Deck[i].cardNumber === player2Deck[i].cardNumber) {
-            console.log('Issa tie');
-            userInput = prompt("Do you want to play a game?").toLowerCase()
+            } else if (player1Deck[i].cardNumber === player2Deck[i].cardNumber) {
+                console.log('Issa tie');
+                i++;
 
 
-        }
-    }
+            }
 }
-
-
+startButton.addEventListener("click", runGame);
 
 
