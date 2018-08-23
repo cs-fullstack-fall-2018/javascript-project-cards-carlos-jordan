@@ -54,9 +54,10 @@ const cards = [
 
 var player1Deck = [];
 var player2Deck = [];
-var player1Score = 0;
-var player2Score = 0;
+var player1Score = document.getElementById('score1');
+var player2Score = document.getElementById('score2');
 var startButton = document.getElementById('start');
+var winner= document.getElementById('notification');
 var i = 0;
 
 
@@ -67,18 +68,21 @@ function runGame() {
 
             if (player1Deck[i].cardNumber > player2Deck[i].cardNumber) {
                 console.log('Player 1 wins this round');
-                console.log(player1Score++);
+                player1Score.innerHTML ++;
                 i++;
+                winner.innerHTML  = "Player 1 Won This Round";
 
 
             } else if (player1Deck[i].cardNumber < player2Deck[i].cardNumber) {
                 console.log('Player 2 wins this round');
-                console.log(player2Score++);
+                player2Score.innerHTML ++;
                 i++;
+                winner.innerHTML  = "Player 2 Won This Round";
 
             } else if (player1Deck[i].cardNumber === player2Deck[i].cardNumber) {
                 console.log('Issa tie');
                 i++;
+                winner.innerHTML  = "It's a Tie!";
 
 
             }
