@@ -21,6 +21,14 @@ body
 
 }
 .players{
-    width: 30%;
+    top: 50%;
+    bottom: 50%;
+    width: 20%;
+    margin: auto;
+}
+
+.buttons
+{
+    width: 15%;
     margin: auto;
 }
