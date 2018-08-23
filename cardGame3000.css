@@ -1,11 +1,26 @@
-h1
-{
-    color: #0954cc;
-}
+
 
 body
 {
-    background-image: url("green.jpg");
-    no-repeat fixed center;
+    background-image: url("green2.jpg");
+    no-repeat: fixed center;
     background-size: cover;
+    color: #ffffff;
+}
+
+
+.carlos
+{
+    color: #ffffff;
+
+
+}
+.carlos2
+{
+    color: #ffffff;
+
+}
+.players{
+    width: 30%;
+    margin: auto;
 }
